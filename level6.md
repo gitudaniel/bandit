@@ -18,4 +18,4 @@ Command: find / -user bandit7 -group bandit6 -size 33c -print0 | xargs -0 grep -
 
 -0 is used by xargs to serve the same purpose as -print0 in find
 
-Output: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+password for level 7: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
