@@ -12,10 +12,16 @@ Use grep -v (inverse filter) to return output that doesn't have the parameters p
 
 In this case we do not want anything with the permission in the output
 
+
+
+
 Command: find / -user bandit7 -group bandit6 -size 33c -print0 | xargs -0 grep -v "Permission"
 
 -print0 prevents any problems from filenames having spaces in them while running the find command
 
 -0 is used by xargs to serve the same purpose as -print0 in find
+
+
+
 
 password for level 7: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs

@@ -16,11 +16,13 @@ What I did I read the file using cat and piped that output to tr.
 
 
 
+
 Command: cat data.txt | tr a-zA-Z n-za-mN-ZA-M
 
 a-zA-Z is the format of the data we are takin in
 
 n-za-mN-ZA-M is how we want the data to be translated
+
 
 
 

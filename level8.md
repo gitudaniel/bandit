@@ -8,8 +8,14 @@ We then pipe the sorted output to the uniq command
 
 Uniq does not work on unsorted output because of multiple unconsecutive occurences of that value. In other words it does not keep track of any output and has no memory of what was previously matched.
 
+
+
+
 Command: sort data.txt | uniq -u
 
 The -u command prints out any unique output in the data
+
+
+
 
 Password to level9: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
