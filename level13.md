@@ -19,10 +19,12 @@ localhost is the machine you're working on.
 
 
 
-command: ssh -i ./ssh.private bandit14@localhost
+command: ssh -i ./ssh.private bandit14@localhost -p 2220
 then:    cat /etc/bandit_pass/bandit14
 
 The ./ simply tells shell that ssh.private is an executable file located in the current working directory.
+
+Remember that the port for this challenge is port 2220. No other port will work.
 
 At this point you will realise that you are already logged in and may not need to read the password. Remember you will not always be logged in and may need to log into bandit14 directly. Hence the cat command
 
