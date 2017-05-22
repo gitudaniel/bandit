@@ -2,6 +2,8 @@ In this exercise we are given a hexdump which is the result of multiple compress
 
 At some point something will have to be decompressed a number of times
 
+Before anything else we create a directory in the /tmp/directory and copy the datafile to it
+
 We convert the hexdump into its original binary format using xxd -r and get more information about it using file. The -r flag converts a hexdump into binary
 
 The output of file is "data2.txt: gzip compressed data, was "data2.bin", from Unix, last modified: Fri Nov 14 10:32:20 2014, max compression"
@@ -31,7 +33,10 @@ Repeat these processes until the file command tells you that the file contains A
 
 
 
-Commands: xxd -r data.txt output.txt
+Commands: mkdir -v /tmp/<directory-name>
+          cp -v data.txt /tmp/<directory-name>/
+          cd /tmp/<directory-name>
+          xxd -r data.txt output.txt
           file output.txt
           mv -v output.txt output.gz
           gzip -dv output.gz
@@ -39,6 +44,10 @@ Commands: xxd -r data.txt output.txt
           bzip2 -dv <filename.bz2/filename.bz>
           mv -v <filename> <filename.tar>
           tar -xvf <filename.tar>
+
+mkdir stands for make directory. The -v flag says tell me when you're done creating the directory. <directory-name> is what you'll call your directory. It could be anything from test123 to joseph
+
+cp stands for copy. -v means tell me when you're done copying. data.txt is the file being copied and /tmp/<directory-name>/ is the location it is being copied to. <directory-name> is the same as the one in the previous command
 
 In xxd data.txt is the file to be converted and output.txt is what we want the converted file to be called.
 
