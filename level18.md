@@ -4,11 +4,11 @@ This means that  once you enter the correct password to log in, you're successfu
 
 What is needed is to open the readme file in the home directory.
 
-We need to force ssh to open a new pseudoterminal but not point to /bin/bash
+We need to force ssh to open a new pseudoterminal but not point to /bin/bash (see https://askubuntu.com/a/141997 for more details on the differences between /bin/sh and /bin/bash)
 
-The only other option is /bin/sh
+The other option is /bin/sh
 
-So we need to force ssh to point to /bin/sh
+So we need to force ssh to open the default system shell (/bin/sh)
 
 Note that for this level we need to ssh into bandit17 first before running any of the commands below
 
