@@ -9,6 +9,8 @@ To read the file we need to prefix it with a path ./ or ~/ will do.
 
 ~ is short for /home/<user> so ~/- stands for /home/<user>/-
 
+To get more information on this see https://unix.stackexchange.com/a/16364https://unix.stackexchange.com/a/16364
+
 
 
 
